@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #decba4, #819f9f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 3vh;
+    margin-top: 0px;
+    font-size: 40px;
+    color: rgb(46, 46, 46);
+}
+
+.container{
+    width: 30vw;
+    height: 60vh;
+    padding: 60px;
+    background: rgb(209, 111, 3);
+    background: linear-gradient(173deg, rgb(246, 161, 71)0%, rgba(254,204,60,1)100%);
+    border-radius: 30px;
+    box-shadow: 0px 0px 24px 4px rgb(247, 222, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(208, 115, 15);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+    border-radius: 5px;
+}
+
+.inner{
+    width: 30vw;
+    height: 5vh;
+    background-color: transparent;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 2px rgb(245, 181, 54);
+}
+
+form{
+    width: 100%;
+    height: 8vh;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], select{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Raleway',sans-serif;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline:none;
+}
+
+button{
+    height: 70%;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button i{
+    font-size: 20px;
+}
+
+form button i {
+    transition: all 0.2s ease-in;
+}
+
+form button i:hover{
+    color: rgb(208, 115, 15);
+}
+
+.todo-list button{
+    background-color: transparent;
+}
+
+.todo-list{
+    width: 95%;
+    padding: 2%;
+    list-style: none;
+}
+
+.todo{
+    border: 2px solid rgb(208, 115, 15);
+    font-size: 1.5rem;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.fa-check:hover{
+    color: rgb(14, 160, 14);
+}
+
+.fa-check:hover{
+    color: rgb(255, 0, 0);
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4px;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    border: 2px solid rgb(64, 122, 6);
+}
+
+select{
+    width: 10vw;
+    height: 25px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 0px;
+    font-size: small;
+}
+
+option{
+    font-size: medium;
+    margin: 10px;
+}
+@media screen and (max-width:880px){
+    h2{
+        font-size: 30px;
+    }
+
+    .container{
+        width: 60vw;
+        min-width: 310px;
+        padding: 20px;
+        min-width: 580px;
+    }
+
+    .inner{
+        width: 100%;
+        min-height: 300px;
+    }
+
+    select{
+        width: 100px;
+    }
+
+    .todo{
+        font-size: 1rem;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:730px){
+    input[type=text]::placeholder{
+        font-size: medium;
+    }
+}

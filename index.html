@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/384e8281dc.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:ital,wght@0,300;1,400&family=Roboto&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+<body>
+    <div class="containet">
+        <h2>To Do List</h2>
+
+        <form>
+        <input type="text" placeholder="Enter your task" maxlength="26" class="text-input">
+        <button class="add-button"><i class="fa-solid fa-circle-plus"></i></button>
+        </form>
+
+        <div class="select">
+            <select name="todos" class="filter">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+
+        <div class="inner">
+            <ul class="todo-list"></ul>
+        </div>
+
+        <h3>Number of tasks : 0</h3>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
